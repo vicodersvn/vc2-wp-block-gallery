@@ -1,0 +1,57 @@
+.vc-gallery {
+    background-position: center;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+
+    .heading-title {
+        font-family    : $font_family;
+        font-size      : 35px;
+        line-height    : 1.29;
+        font-weight    : 500;
+        color          : #575756;
+        margin-bottom  : 40px;
+        display        : flex;
+        text-align     : center;
+        justify-content: center;
+
+        @media(max-width: 767px) {
+            font-size: 28px;
+        }
+
+        .icon {
+            img {
+                height: 16px;
+                width : auto;
+            }
+
+            &.icon-left {
+                img {
+                    margin-right: 30px;
+                }
+            }
+
+            &.icon-right {
+                img {
+                    margin-left: 30px;
+                }
+            }
+        }
+
+    }
+
+    .gallery {
+        .thumbnail {
+            overflow     : hidden;
+            margin-bottom: 30px;
+
+            img {
+                width     : 100%;
+                transition: all .5s ease 0s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
